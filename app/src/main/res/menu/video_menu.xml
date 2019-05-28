@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/like"
+        android:orderInCategory="100"
+        android:title="Like"
+        android:icon="@drawable/ic_thumb_up"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dislike"
+        android:orderInCategory="200"
+        android:title="Dislike"
+        android:icon="@drawable/ic_thumb_down"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="300"
+        android:title="Share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/copy"
+        android:orderInCategory="400"
+        android:title="CopyLink"
+        android:icon="@drawable/ic_copy"
+        app:showAsAction="always" />
+
+
+
+
+</menu>

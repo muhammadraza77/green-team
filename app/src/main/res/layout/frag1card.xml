@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/folding_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:layout_margin="10dp"
+    android:clipToPadding="false"
+    android:elevation="7dp">
+
+   <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+    android:id="@+id/backCard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:visibility="gone"
+       android:elevation="5dp"
+       app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!---->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="300dp">
+
+
+        <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BatsmenCard"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="15dp">
+
+            <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+            <TableRow
+                android:id="@+id/bat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp">
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Batsmen"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Runs"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Balls"
+                    android:textColor="#000"/>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="4s"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="6s"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Sr"
+                    android:textColor="#000"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/Batsmen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp">
+                <TextView
+                    android:id="@+id/Batsmen1name"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="Batsmen1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Batsmen1runs"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/Batsmen1balls"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="0"/>
+
+
+                <TextView
+                    android:id="@+id/Batsmen1fours"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/Batsmen1sixes"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/Batsmen1SR"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:text="--"/>
+            </TableRow>
+            <TableRow
+            android:id="@+id/Batsmen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp">
+            <TextView
+                android:id="@+id/Batsmen2name"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Batsmen2"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Batsmen2runs"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/Batsmen2balls"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="0"/>
+
+
+            <TextView
+                android:id="@+id/Batsmen2fours"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/Batsmen2sixes"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/Batsmen2SR"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="--"/>
+        </TableRow>
+
+        </TableLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BowlerCard"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="15dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="*"
+                android:shrinkColumns="*">
+                <TableRow
+                    android:id="@+id/bowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp">
+                    <TextView
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Bowler"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Overs"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Runs"
+                        android:textColor="#000"/>
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="W"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="M"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Eco"
+                        android:textColor="#000"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/Bowler1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp">
+                    <TextView
+                        android:id="@+id/Bowler1name"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Bowler1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Bowler1overs"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0.0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler1runs"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+
+                    <TextView
+                        android:id="@+id/Bowler1wickets"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler1maidens"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler1Eco"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="--"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/Bowler2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp">
+                    <TextView
+                        android:id="@+id/Bowler2name"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="Bowler2"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Bowler2overs"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0.0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler2runs"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+
+                    <TextView
+                        android:id="@+id/Bowler2wickets"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler2maidens"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/Bowler2Eco"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="--"/>
+                </TableRow>
+
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/status"
+            android:background="#fff"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp"
+            android:text="Stumps"/>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+​   <android.support.v7.widget.CardView
+    android:padding="10dp"
+        android:id="@+id/frontCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/team1data"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_south_africa"
+                android:id="@+id/t1flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_below="@+id/t1flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="South Africa"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/t1name"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/t1name"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear1">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t1score1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="22/2"/>
+            <TextView
+                android:layout_below="@+id/t1name"
+                android:text="(4.1)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t1overs1"
+                android:layout_toRightOf="@+id/t1score1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/linear1"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1score2"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="431/10"/>
+                <TextView
+                    android:text="(124.1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1overs2"
+                    android:layout_toRightOf="@+id/t1score2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/team2data"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/team1data">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pakistan"
+                android:id="@+id/t2flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_below="@+id/t2flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pakistan"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/t2name"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/t2name"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear2">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2score1"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="294/10"/>
+                <TextView
+                    android:text="(70.4)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2overs1"
+                    android:layout_toRightOf="@+id/t2score1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/linear2"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2score2"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="177/10"/>
+                <TextView
+                    android:text="(51.1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t2overs2"
+                    android:layout_toRightOf="@+id/t2score2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </TableRow>
+    <TextView
+        android:id="@+id/toss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pakistan Won the toss and Elected to feild"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:maxLines="1"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    ​
+</com.ramotion.foldingcell.FoldingCell>

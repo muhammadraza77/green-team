@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mujtaba.greenteam.tabbed">
+    <item
+        android:id="@+id/like"
+        android:orderInCategory="100"
+        android:title="Like Article"
+        android:icon="@drawable/ic_thumb_up"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="200"
+        android:title="Share Article"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/dislike"
+        android:orderInCategory="300"
+        android:title="Dislike Article"
+        android:icon="@drawable/ic_thumb_down"
+        app:showAsAction="always" />
+
+
+</menu>

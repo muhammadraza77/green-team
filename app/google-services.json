@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1077244724244",
+    "firebase_url": "https://greenteam-f5af1.firebaseio.com",
+    "project_id": "greenteam-f5af1",
+    "storage_bucket": "greenteam-f5af1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077244724244:android:dc8d7d1d907a17f7",
+        "android_client_info": {
+          "package_name": "com.example.mujtaba.greenteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077244724244-e2gd380s860kdkasodpp9ak3fk0fkup9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaWnTY89Uh3Op_NgMiJ-OVOTPNsHdnuSk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

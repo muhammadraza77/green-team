@@ -1,0 +1,15 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/YTvideo_player">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+</LinearLayout>

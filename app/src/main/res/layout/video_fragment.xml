@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mujtaba.greenteam.MainActivity"
+    android:background="#fff">
+
+    <!--<com.github.pedrovgs.DraggablePanel-->
+        <!--android:id="@+id/draggable_panel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+            <ListView
+            android:padding="10dp"
+            android:id="@+id/videoRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            </ListView>
+
+<com.github.pedrovgs.DraggableView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mydraggable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        draggable_view:enable_minimized_horizontal_alpha_effect="true"
+        draggable_view:top_view_height="200dp"
+        draggable_view:top_view_id="@+id/youtube"
+        draggable_view:bottom_view_id="@+id/lr1"
+        draggable_view:top_view_margin_bottom="50dp"
+        draggable_view:top_view_margin_right="10dp"
+        draggable_view:top_view_resize="true"
+        draggable_view:top_view_x_scale_factor="2.3"
+        draggable_view:top_view_y_scale_factor="2.3">
+
+        <FrameLayout
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:id="@+id/lr1">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video title Here"
+                android:textSize="20sp"
+                android:id="@+id/video_title"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:textAlignment="textStart"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_description"
+                android:textAlignment="textStart"
+                android:text="@string/lorem"
+                android:layout_marginStart="10dp"
+                />
+            <TableLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="4"
+                android:layout_marginStart="10dp">
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <ImageButton
+                        android:layout_height="35dp"
+                        android:layout_weight="3"
+                        android:layout_width="35dp"
+                        android:background="#fff"
+
+                        android:src="@drawable/ic_thumb_up"
+                        />
+                    <ImageButton
+                        android:background="#fff"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"
+                        android:layout_weight="3"
+
+                        android:src="@drawable/ic_thumb_down"/>
+                    <ImageButton
+                        android:layout_height="35dp"
+                        android:layout_weight="3"
+                        android:background="#fff"
+                        android:layout_width="35dp"
+                        android:src="@drawable/ic_copy"/>
+                    <ImageButton
+                        android:layout_height="35dp"
+                        android:layout_weight="3"
+                        android:background="#fff"
+                        android:layout_width="35dp"
+                        android:src="@drawable/ic_share"/>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </com.github.pedrovgs.DraggableView>
+
+    <!--</com.github.pedrovgs.DraggablePanel>-->
+</FrameLayout>
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.mujtaba.greenteam.video_fragment">-->
+    <!--<com.github.pedrovgs.DraggablePanel-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/draggable_panel">-->
+    <!--</com.github.pedrovgs.DraggablePanel>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:padding="10dp"-->
+        <!--android:id="@+id/videoRV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+<!--</FrameLayout>-->

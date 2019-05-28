@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Articles"
+                android:id="@+id/heading"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:fontFamily="casual"/>
+
+            <android.support.v7.widget.RecyclerView
+
+                android:padding="10dp"
+                android:layout_below="@id/heading"
+                android:id="@+id/featureNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/featureNews"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="#414040"
+                />
+
+
+            <TextView
+                android:layout_below="@id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Articles"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:id="@+id/tv1"
+                android:padding="10dp"
+                android:fontFamily="casual"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_below="@id/tv1"
+                android:id="@+id/allNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+</ScrollView>

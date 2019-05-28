@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GreenTeam</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+        <string-array name="items">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+
+        </string-array>
+    <string name="title_activity_tabbed">tabbed</string>
+    <string name="about_us">GreenCriket aims to delivers latest and breaking Contents related to Cricket in English. We are just a small group providing Updates, Live Scores, and Breaking News and Videos related to cricket just for free. All the Rankings, Matches fixtures and Live Score are taken from ICCs official website. Join us and Help us Grow Stronger</string>
+    <string name="lorem">nterdum et malesuada fames ac ante ipsum primis in faucibus. Sed turpis mauris, mattis eget pellentesque in, eleifend ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed turpis turpis. Sed ut pretium dolor.
+        Nam auctor sollicitudin ante. Cras id maximus metus. Nullam quis ornare risus. Donec sit amet facilisis tortor, at vestibulum metus.</string>
+</resources>

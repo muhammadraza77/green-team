@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:layout_marginEnd="8dp" >-->
+
+        <!--</android.support.v4.view.ViewPager>-->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:src="@drawable/img22"
+    android:id="@+id/viewPager"
+    />
+
+        <TextView
+            android:layout_below="@id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Matches"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:id="@+id/textlive"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:fontFamily="casual"
+            android:layout_marginBottom="0dp"/>
+
+        <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+            android:layout_below="@+id/textlive"
+        android:layout_marginTop="0dp"
+        android:id="@+id/liveScore">
+
+    </android.support.v7.widget.RecyclerView>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/liveScore"
+    android:layout_marginTop="10dp"
+    android:id="@+id/card">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/rankingtextview"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:text="ICC Top 10 Test Teams"/>
+    <ProgressBar
+
+        android:layout_height="25dp"
+        android:id="@+id/progress"
+        android:layout_width="25dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"/>
+
+            <Button
+                   android:id="@+id/menu"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:background="@drawable/ic_menu"/>
+
+        </TableRow>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/homenews">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_below="@id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top News"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:id="@+id/textnews"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:fontFamily="casual"
+            android:layout_marginBottom="0dp"/>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/newrv"
+    android:layout_below="@+id/textnews">
+
+</android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

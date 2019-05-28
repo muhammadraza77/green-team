@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mujtaba.greenteam.tabbed">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/newsid"
+        android:orderInCategory="100"
+        android:title="News"
+        app:showAsAction="always"
+        android:icon="@drawable/news"/>
+    <item
+        android:id="@+id/liveScoreid"
+        android:orderInCategory="100"
+        android:title="Score"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_scores"/>
+    <item
+        android:id="@+id/streaming"
+        android:orderInCategory="100"
+        android:title="Streaming"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_live_match"/>
+    <item
+        android:id="@+id/aboutUs"
+        android:title="AboutUs"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/about_us"/>
+
+
+</menu>

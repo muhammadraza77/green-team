@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/bt"
+    android:layout_marginRight="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#14261a"
+            android:alpha="0.4">
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAllCaps="true"
+            android:id="@+id/heading"
+            android:layout_marginTop="70dp"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:text="this will be heading for our new issue wagera wagera but this is nice"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/heading"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="40dp"
+        />
+</RelativeLayout>
